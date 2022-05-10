@@ -1,6 +1,8 @@
 const $screen = document.querySelector("#screen")
 
 const operators = document.querySelectorAll(".operator")
+operators[1].textContent = "/"
+operators[2].textContent = "*"
 operators.forEach(operator => {
     operator.addEventListener("click", (event) => {
         if (operator.textContent === "=") {
